@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;font:inherit;font-weight: normal;}
+html{font-family: sans-serif, arial;font-size:14px;}
+
+.scroll::-webkit-scrollbar {width: 8px;}
+.scroll::-webkit-scrollbar-track {background: #cecece;}
+.scroll::-webkit-scrollbar-thumb {background: #a4a4a4;}
+
+.background{
+  background-image: url(../img/overlay.png), linear-gradient(60deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.45)), url(../img/background.jpg);
+  background-image: url(../img/overlay.png), -moz-linear-gradient(60deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.45)), url(../img/background.jpg);
+  background-image: url(../img/overlay.png), -webkit-linear-gradient(60deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.45)), url(../img/background.jpg);
+  background-image: url(../img/overlay.png), -ms-linear-gradient(60deg, rgba(0, 0, 0, 0.6) 5%, rgba(0, 0, 0, 0.45)), url(../img/background.jpg);
+  background-repeat: repeat, no-repeat, no-repeat; background-size: 50px 50px, cover, cover; background-position: top left, center center, top center; background-attachment: fixed,   fixed,  fixed; overflow: hidden; transition:all .5s ease;
+}
+
+.clearBoth{clear: both;}
+.blockBody{width:100%;float:left;}
+.modeToggle{padding: 20px;}
+.mode{width: 33%;float:left;}
+.modeButton.selected {border-style: dashed !important;}
+.modeButton {transition:all .5s ease; outline: none; cursor: pointer;font-size: 40px;padding: 10px;width: 60px;height:60px;border: 3px solid;color: white;background: none;}
+.modeButton > span {line-height: 30px;vertical-align: text-top;}
+.generatedQuestionString{font-size: 28px;padding: 20px 10px;color: white;border: 3px solid;}
+.contentWrapper{max-width:320px;margin:0 auto;text-align: center;}
+.contentHeader{padding: 30px 0px 10px;font-size: 32px;color: white;position: relative;}
+.logoText{color:#ddd;}
+.gameBox{margin: 10px 0 20px;}
+.blocks > div:nth-child(1), .blocks > div:nth-child(2), .blocks > div:nth-child(3), .blocks > div:nth-child(4), .blocks > div:nth-child(5), .blocks > div:nth-child(6) {border-bottom: 3px solid #fff;}
+.blocks > div:nth-child(2), .blocks > div:nth-child(5), .blocks > div:nth-child(8) {border-left: 3px solid #fff;border-right: 3px solid #fff;}
+.block{float:left;width:32%;cursor: pointer; }
+.square {padding: 10px;height: 100px;color: white;font-size: 24px;font-family: cursive;}
+.square > span {line-height: 110px;vertical-align: top;}
+.logoTextBlock{text-align:center;cursor:pointer;}
